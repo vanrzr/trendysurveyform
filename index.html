@@ -5,44 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="description">
-        <h1>We want to know more about you</h1>
-        <p>We swear we are not selling your data, pinky promise!</p>
-    </section>
-    <section class="survey">
-        <div class="survey-container">
-            <form action="#">
-                <label for="name">
-                    name <input id="name" name="name" type="text" placeholder="How do you like to be called" required />
-                </label>
-                <label for="email">
-                    email <input id="email" name="email" type="email" placeholder="We would love to write back" required />
-                </label>
-                <label for="age">
-                    age <input id="age" name="age" type="number" min="13" max="120" placeholder="Are you 80 years old?" required />
-                </label>
-                <p>Do you like to fill surveys?</p>
-                <label for="user-like">
-                    <input name="user-like" value="not-really" type="radio" class="input-radio" checked /> Not really
-                    <input name="user-like" value="bored" type="radio" class="input-radio" /> Only when I'm bored
-                    <input name="user-like" value="love" type="radio" class="input-radio" /> Yes, I love them!
-                </label>
-                <p>What do you like most about surveys?</p>
-                <select id="most-like" name="mostLike" class="form-control" required>
-                    <option disabled selected value>Select an option</option>
-                    <option value="choices">Multiple choices</option>
-                    <option value="helping">Helping</option>
-                    <option value="community">Community</option>
-                    <option value="not-sure">I'm not sure</option>
-                </select>
-                <label for="commets">Do you have comments for us?
-                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Let us know, don't be shy!"></textarea>
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
-    </section>
+    <main>
+        <section class="description">
+            <div class="description-title"><p>We want<br>to know more<br>about you</p></div>
+            <div class="description-text"><p>We swear we are not selling<br>your data, pinky promise!</p></div>
+        </section>
+        <section class="survey">
+            <div class="survey-container">
+                <form action="#">
+                    <label for="name">
+                        name <input id="name" name="name" type="text" placeholder="How do you like to be called" required />
+                    </label>
+                    <label for="email">
+                        email <input id="email" name="email" type="email" placeholder="We would love to write back" required />
+                    </label>
+                    <label for="age">
+                        age <input id="age" name="age" type="number" min="13" max="120" placeholder="Are you 80 years old?" required />
+                    </label>
+                    <p>Do you like to fill surveys?</p>
+                    <label for="user-like">
+                        <input name="user-like" value="not-really" type="radio" class="input-radio" checked /> Not really
+                        <input name="user-like" value="bored" type="radio" class="input-radio" /> Only when I'm bored
+                        <input name="user-like" value="love" type="radio" class="input-radio" /> Yes, I love them!
+                    </label>
+                    <p>What do you like most about surveys?</p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="choices">Multiple choices</option>
+                        <option value="helping">Helping</option>
+                        <option value="community">Community</option>
+                        <option value="not-sure">I'm not sure</option>
+                    </select>
+                    <label for="commets">Do you have comments for us?
+                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Let us know, don't be shy!"></textarea>
+                    </label>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
