@@ -10,40 +10,41 @@
 <body>
     <main>
         <section class="description">
-            <div class="description-title"><p>We want<br>to know more<br>about you</p></div>
+            <div class="description-title">We want<br>to know more<br>about you</div>
             <div class="description-text"><p>We swear we are not selling<br>your data, pinky promise!</p></div>
         </section>
         <section class="survey">
             <div class="survey-container">
-                <form action="#">
-                    <label for="name">
-                        name <input id="name" name="name" type="text" placeholder="How do you like to be called" required />
-                    </label>
-                    <label for="email">
-                        email <input id="email" name="email" type="email" placeholder="We would love to write back" required />
-                    </label>
-                    <label for="age">
-                        age <input id="age" name="age" type="number" min="13" max="120" placeholder="Are you 80 years old?" required />
-                    </label>
-                    <p>Do you like to fill surveys?</p>
-                    <label for="user-like">
-                        <input name="user-like" value="not-really" type="radio" class="input-radio" checked /> Not really
-                        <input name="user-like" value="bored" type="radio" class="input-radio" /> Only when I'm bored
-                        <input name="user-like" value="love" type="radio" class="input-radio" /> Yes, I love them!
-                    </label>
-                    <p>What do you like most about surveys?</p>
-                    <select id="most-like" name="mostLike" class="form-control" required>
-                        <option disabled selected value>Select an option</option>
-                        <option value="choices">Multiple choices</option>
-                        <option value="helping">Helping</option>
-                        <option value="community">Community</option>
-                        <option value="not-sure">I'm not sure</option>
-                    </select>
-                    <label for="commets">Do you have comments for us?
-                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Let us know, don't be shy!"></textarea>
-                    </label>
+                <form>
+                    <fieldset class="first">
+                      <label for="name">name <input id="name" name="name" type="text" placeholder=" How do you like to be called?" required /></label>
+                      <label for="email">email <input id="email" name="email" type="email" placeholder=" We would love to write back" required /></label>
+                      <label for="age">age <input id="age" type="number" name="age" min="13" max="120" placeholder=" Are you 80 years old?" /></label>
+                    </fieldset>
+
+                    <fieldset class="second">
+                      <p>Do you like to fill surveys?</p>
+                      <label for="not-really"><input id="not-really" type="radio" name="user-preference" class="inline" /> Not really</label>
+                      <label for="bored"><input id="bored" type="radio" name="user-preference" class="inline" /> Only when I'm bored</label>
+                      <label for="love"><input id="love" type="radio" name="user-preference" class="inline" /> Yes, I love them!</label>
+                    </fieldset>
+
+                    <fieldset class="third">
+                      <label for="referrer">What do you like most about surveys?
+                        <select id="referrer" name="referrer">
+                          <option value="">(select one)</option>
+                          <option value="1">Multiple options</option>
+                          <option value="2">Community</option>
+                          <option value="3">Helping</option>
+                          <option value="4">Other</option>
+                        </select>
+                      </label>
+                      <label for="comments">Do you have any comments for us?
+                        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Let us know, don't be shy!"></textarea>
+                      </label>
+                    </fieldset>
                     <input type="submit" value="Submit" />
-                </form>
+                  </form>
             </div>
         </section>
     </main>
